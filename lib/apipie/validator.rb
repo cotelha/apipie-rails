@@ -92,7 +92,7 @@ module Apipie
       end
 
       def description
-        "Must be #{@type}"
+        I18n.t 'apipie.validators.descriptions.type', :type => @type
       end
 
       def expected_type
@@ -123,7 +123,7 @@ module Apipie
       end
 
       def description
-        "Must match regular expression /#{@regexp.source}/."
+        I18n.t 'apipie.validators.descriptions.regexp', :regexp => @regexp.source
       end
     end
 
@@ -144,7 +144,7 @@ module Apipie
       end
 
       def description
-        "Must be one of: #{@array.join(', ')}."
+        I18n.t 'apipie.validators.descriptions.array', :array => @array.join(', ')
       end
     end
 
@@ -217,7 +217,7 @@ module Apipie
       end
 
       def description
-        "Must be a Hash"
+        I18n.t 'apipie.validators.descriptions.hash', :type => "teste"
       end
 
       def expected_type
@@ -278,7 +278,7 @@ module Apipie
       end
 
       def description
-        "Must be a number."
+        I18n.t 'apipie.validators.descriptions.number'
       end
 
       def self.validate(value)
@@ -299,7 +299,7 @@ module Apipie
       end
 
       def description
-        "Must be 'true' or 'false'"
+        I18n.t 'apipie.validators.descriptions.boolean'
       end
     end
 

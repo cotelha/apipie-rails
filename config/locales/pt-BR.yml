@@ -1,0 +1,21 @@
+pt-BR:
+  apipie:
+    resources: "Recursos"
+    resource: "Recurso"
+    method: "Método"
+    description: "Descrição"
+    supported_formats: "Formatos Suportados"
+    params: "Parâmetros"
+    params_name: "Nome do Parâmetro"
+    value: "Valor"
+    required: "Obrigatório"
+    optional: "Opcional"
+    nil_allowed: "Permite Nulo"
+    validators:
+      descriptions:
+        hash: "Deve ser um Hash."
+        number: "Deve ser um número."
+        boolean: "Deve ser 'true' ou 'false'"
+        array: "Deve ser um dos: %{array}."
+        regexp: "Deve corresponder com a expressão regular: /%{regexp}/."
+        type: "Deve ser %{type}"

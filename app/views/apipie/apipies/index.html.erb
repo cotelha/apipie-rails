@@ -9,7 +9,7 @@
 
 <div><%= raw @doc[:info] %></div>
 
-<h1 class='page-header'>Resources</h1>
+<h1 class='page-header'><%=t 'apipie.resources' %></h1>
 
 <% @doc[:resources].sort_by(&:first).each do |key, api| %>
   <h2>
@@ -21,8 +21,8 @@
   <table class='table'>
     <thead>
       <tr>
-        <th>Resource</th>
-        <th>Description</th>
+        <th><%=t 'apipie.resource' %></th>
+        <th><%=t 'apipie.description' %></th>
       </tr>
     </thead>
     <tbody>

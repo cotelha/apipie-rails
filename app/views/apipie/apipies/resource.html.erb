@@ -22,7 +22,7 @@
 <% end %>
 
 <% unless @resource[:formats].blank? %>
-  <h2>Supported Formats</h2>
+  <h2><%=t 'apipie.supported_formats' %> </h2>
   <%= @resource[:formats].join(', ') %>
 <% end %>
 
@@ -55,12 +55,12 @@
       <%= raw m[:full_description] %>
 
       <% unless m[:formats].blank? %>
-        <h3>Supported Formats</h3>
+        <h3><%=t 'apipie.supported_formats' %></h3>
         <%= m[:formats].join(', ') %>
       <% end %>
 
       <% unless m[:errors].blank? %>
-        <h3>Errors</h3>
+        <h3><%=t 'apipie.errors' %></h3>
         <% m[:errors].each do |err| %>
           <%= err[:code] %>
           <%= err[:description] %>
@@ -69,19 +69,19 @@
       <% end %>
 
       <% unless m[:examples].blank? %>
-        <h3>Examples</h3>
+        <h3><%=t 'apipie.examples' %></h3>
         <% m[:examples].each do |example| %>
           <pre class="prettyprint"><%= example %></pre>
         <% end %>
       <% end %>
 
       <% unless m[:params].blank? %>
-        <h3>Params</h3>
+        <h3><%=t 'apipie.params' %></h3>
         <table class='table'>
           <thead>
             <tr>
-              <th>Param name</th>
-              <th>Description</th>
+              <th><%=t 'apipie.params_name' %></th>
+              <th><%=t 'apipie.description' %></th>
             </tr>
           </thead>
           <tbody>

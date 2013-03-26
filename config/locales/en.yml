@@ -1,0 +1,10 @@
+en:
+  apipie:
+    validators:
+      descriptions:
+        hash: "Must be a Hash."
+        number: "Must be a number."
+        boolean: "Must be 'true' or 'false'."
+        array: "Must be one of: %{array}."
+        regexp: "Must match regular expression: /%{regexp}/."
+        type: "Must be %{type}"
